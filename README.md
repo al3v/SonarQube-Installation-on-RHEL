@@ -19,22 +19,24 @@ This guide provides step-by-step instructions for installing SonarQube on Red Ha
    ```
 
 2. Disable Red Hat's AppStream PostgreSQL:
+
+   Red Hat's AppStream might contain a default version of PostgreSQL. Disable this to avoid conflicts with the version from the PostgreSQL repository
    ```bash
    sudo dnf -qy module disable postgresql
    ```
 
-3. Install PostgreSQL:
+5. Install PostgreSQL:
    ```bash
    sudo dnf install -y postgresql15-server
    ```
 
-4. Initialize the Database and Enable Automatic Start:
+6. Initialize the Database and Enable Automatic Start:
    ```bash
    sudo /usr/pgsql-15/bin/postgresql-15-setup initdb
    sudo systemctl enable --now postgresql-15
    ```
 
-5. Check PostgreSQL status:
+7. Check PostgreSQL status:
    ```bash
    sudo systemctl status postgresql-15
    ```
