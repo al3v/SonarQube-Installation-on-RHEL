@@ -1,8 +1,8 @@
 # SonarQube Installation Guide for RHEL
 
-This guide provides step-by-step instructions for installing SonarQube on Red Hat Enterprise Linux (RHEL).
+This guide provides step-by-step instructions for installing SonarQube on Red Hat Enterprise Linux (RHEL).🎩
 
-## Table of Contents
+## Table of Contents 📄
 1. [Install PostgreSQL](#install-postgresql)
 2. [Create Database for SonarQube](#create-database-for-sonarqube)
 3. [Install Java 17](#install-java-17)
@@ -200,12 +200,12 @@ Access via: `http://<IP>:9000`
 On local: `curl http://localhost:9000`
 
 
-## Result:
+## Result ✨
 
 ![Ekran görüntüsü 2024-07-22 181144](https://github.com/user-attachments/assets/488e500b-7083-4324-ab14-9eb2d1515aa4)
 
 
-## Troubleshooting
+## Troubleshooting 🔧
 
 1. Check Firewall Settings:
 Make sure that port 9000 is open on your firewall. You can open it with:
