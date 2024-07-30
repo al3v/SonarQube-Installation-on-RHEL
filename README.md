@@ -96,7 +96,7 @@ This guide provides step-by-step instructions for installing SonarQube on Red Ha
    java --version
    ```
 
-   If there's a problem:
+   (OPTIONAL) - If there's a problem:
    ```bash
    sudo rm -f /etc/yum.repos.d/adoptium.repo
    sudo dnf clean all
