@@ -109,7 +109,7 @@ This guide provides step-by-step instructions for installing SonarQube on Red Ha
    ```bash
    sudo vim /etc/security/limits.conf
    ```
-   Add:
+   Add the following lines at the bottom of the file:
    ```
    sonarqube   -   nofile   65536
    sonarqube   -   nproc    4096
@@ -158,11 +158,11 @@ This guide provides step-by-step instructions for installing SonarQube on Red Ha
    sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
    ```
 
-4. Create SonarQube service:
+4. Create SonarQube service file to manage SonarQube as a service:
    ```bash
    sudo vim /etc/systemd/system/sonar.service
    ```
-   Add:
+   Paste the below into the file:
    ```ini
    [Unit]
    Description=SonarQube service
@@ -202,12 +202,13 @@ On local: `curl http://localhost:9000`
 ## Troubleshooting
 
 1. Check Firewall Settings:
+Make sure that port 9000 is open on your firewall. You can open it with:
    ```bash
    sudo firewall-cmd --permanent --add-port=9000/tcp
    sudo firewall-cmd --reload
    ```
 
-2. Review SonarQube Logs:
+3. Review SonarQube Logs:
    ```bash
    sudo tail -f /opt/sonarqube/logs/sonar.log
    ```
