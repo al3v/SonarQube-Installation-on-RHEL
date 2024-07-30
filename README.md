@@ -199,6 +199,12 @@ Access via: `http://<IP>:9000`
 
 On local: `curl http://localhost:9000`
 
+
+## Result:
+
+![Ekran görüntüsü 2024-07-22 181144](https://github.com/user-attachments/assets/488e500b-7083-4324-ab14-9eb2d1515aa4)
+
+
 ## Troubleshooting
 
 1. Check Firewall Settings:
